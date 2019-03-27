@@ -24,6 +24,7 @@ if(isset($_POST["submit"])) {
 <!--playlist2-->
 <?php
 if(isset($_POST["submit1"])) {
+  echo $_POST["submit1"];
   $length_of_array1 = count($_FILES['userfile1']['name']);
   //echo $length_of_array;
 
@@ -115,7 +116,7 @@ if(isset($_POST["submit4"])) {
   PLAYLIST2
 <form enctype="multipart/form-data" action="" method="post">
   <input type="hidden" name="MAX_FILE_SIZE" value="300000" />
-  File to Upload: <input name="userfile1[]" type="file" />
+  File to Upload: <input name="userfile1[]" type="file" multiple/>
   <input type="submit" value="Upload File" name="submit1" />
 </form>
 <a href = "display_playlist2.php">See Playlist2</a>
@@ -125,7 +126,7 @@ if(isset($_POST["submit4"])) {
   PLAYLIST3
 <form enctype="multipart/form-data" action="" method="post">
   <input type="hidden" name="MAX_FILE_SIZE" value="300000" />
-  File to Upload: <input name="userfile2[]" type="file" />
+  File to Upload: <input name="userfile2[]" type="file" multiple/>
   <input type="submit" value="Upload File" name="submit2" />
 </form>
 <a href = "display_playlist3.php">See Playlist3</a>
@@ -135,7 +136,7 @@ if(isset($_POST["submit4"])) {
 PLAYLIST4
 <form enctype="multipart/form-data" action="" method="post">
   <input type="hidden" name="MAX_FILE_SIZE" value="300000" />
-  File to Upload: <input name="userfile3[]" type="file" />
+  File to Upload: <input name="userfile3[]" type="file" multiple/>
   <input type="submit" value="Upload File" name="submit3" />
 </form>
 <a href = "display_playlist4.php">See Playlist4</a>
@@ -145,11 +146,11 @@ PLAYLIST4
 PLAYLIST5
 <form enctype="multipart/form-data" action="" method="post">
   <input type="hidden" name="MAX_FILE_SIZE" value="300000" />
-  File to Upload: <input name="userfile4[]" type="file" />
+  File to Upload: <input name="userfile4[]" type="file" multiple/>
   <input type="submit" value="Upload File" name="submit4" />
 </form>
 <a href = "display_playlist5.php">See Playlist5</a>
 </section>
-<script src="js/admin_1.js"></script>
+<script src="js/admin_1_0.js"></script>
 </body>
 </html>

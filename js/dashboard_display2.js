@@ -1,8 +1,8 @@
-
-fetch("display_playlist1.php").then(result => result.text()).then(result => {
+//playlist2
+fetch("display_playlist2.php").then(result => result.text()).then(result => {
     const parser = new DOMParser();
     const htmlDocument = parser.parseFromString(result, "text/html");
-    const section = htmlDocument.getElementById("playlist1");
+    const section = htmlDocument.getElementById("playlist2");
     console.log(section);
     const display = document.body.appendChild(section);
     display.style.backgroundColor = "lightyellow";

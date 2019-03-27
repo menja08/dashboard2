@@ -11,7 +11,7 @@ function showPlaylist() {
 
   function newPlaylist() {
     let value = select.value;
-    console.log(value);
+    // console.log(value);
 
     function displayOnePlaylist() {
       // get all sections on page
